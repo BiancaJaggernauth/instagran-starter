@@ -3,21 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab Exercise - Instagran</title>
     <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555">
 
     <style>
-    
-      
+        
+        body {
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #fafafa; 
+        }
+
+        nav {
+            display: block;
+            background-color: white;
+            width: 100%;
+            height: 54px;
+            border-bottom: 1px solid #e5e5e5;
+            white-space: nowrap;
+        }
+
+        #logo {
+            height: 40px;
+            position: relative;
+            top: 7px; 
+            left: 20px;
+        }
+
+        input[type="text"] {
+            height: 25px;
+            position: relative;
+            width: 30vw;
+            margin-left: 18vw; 
+            top: -5px;  
+            background-color: #fafafa;
+            text-align: center;
+            border: 1px solid #b5b5b5;
+            border-radius: 3px;
+        }
+
+        #actions {
+            height: 40px;
+            position: relative;
+            top: 7px;          
+            margin-left: 15vw;
+        }
+
+        #stories {
+            display: flex;     
+            justify-content: center;
+            height: 90px;
+            width: 70vw;
+            margin: 10px auto;
+            border: 1px solid #b5b5b5;
+            border-radius: 2px;
+            background-color: white;
+        }
+
+        .user {
+            width: 18%;
+            display: inline-block; 
+        }
+
+        .user img {
+            margin-top: 5px;
+            border-radius: 50%;
+            border: 4px double #b5b5b5; 
+            width: 56px; 
+            height: 56px; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+        .user p {
+            text-align: center; 
+            margin: 0;
+            font-family: "Lucida Sans Unicode", sans-serif; 
+            font-weight: 100; 
+            font-size: smaller; 
+        }
+
+        .post {
+            border: 1px solid #b5b5b5;
+            border-radius: 2px;
+            background-color: white;
+            height: auto;
+            max-height: 80vh;
+            width: 560px;
+            margin: 30px auto;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .post-header {
+            background-color: white;
+            height: 50px;
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #b5b5b5;
+            display: flex;
+            align-items: center;
+        }
+
+        .post-header img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
     </style>
 </head>
+
 <body>
     <nav>
-       
         <img id="logo" src="img/instagran.png" alt="instagran logo" >
-    
         <input type="text" placeholder="search"/>
-
         <img id="actions" src="img/actions.png" alt="actions" >
     </nav>
 
@@ -38,7 +145,6 @@
             <img src="img/gran4.jpg" >
             <p class="userstory">Delores</p>
         </div>
-
         <div class="user">
             <img src="img/gran5.jpg" >
             <p class="userstory">Karen</p>
@@ -50,7 +156,7 @@
             <img src="img/gran1.jpg"><span>Elma</span>
         </div>
         <div>
-            <img class="post-image" src="https://www.placecage.com/g/512/512" alt="cage image">
+            <img class="post-image" src="https://i.pinimg.com/1200x/5e/90/16/5e90169bf3c14802c47784c554cc9d2b.jpg" alt="cage image">
         </div>
     </section>
 
